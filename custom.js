@@ -17,7 +17,7 @@ function createDialog(b, a) {
             top: -1,
             width: c.width() + 10,
             height: c.height() + 10,
-            backgroundImage: "url(" + protocolRef + "//dcqhpema7gk9a.cloudfront.net/IND/HTML5/transparent.png)",
+            backgroundImage: "url(transparent.png)",
             position: "absolute",
             zIndex: 3E3
         });
