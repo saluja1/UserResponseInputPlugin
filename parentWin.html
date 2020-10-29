@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<HTML>
+ <HEAD>
+  <TITLE>HTML5 Demo</TITLE>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script type="text/javascript" src="http://d3c7o8x2i12pye.cloudfront.net/LayoutSL2015/jquery-1.9.1.min.js"></script>
+  <style>
+  #forwardbutton{display: none}
+  </style>
+ </HEAD>
+ <BODY>
+ <center>
+
+<script>
+var URObj = {
+  okLabel: "   OK   ",
+  errMsg1: "Please provide atleast one response or select exclusive option.", //minimum other specify error
+  errMsg2: "Please be specific with your response in other specify box.", //blank other specify error
+  errMsg3: "Please provide your response consecutively.", //consecutive other specify error
+  errMsg4: "Please provide different answers.", //Same other specify error
+  minOther: 1, //put it 0 if you have don't have minimum 
+  openEndLimit: 10, //maximum other specify limit
+  pileText: ["S.No"], //pile Text
+  exclusiveText: "Do not know any brand", //exclusive text
+  OpenEndButtonText: "Add More" //other specify button text
+};
+$(document).on("ready", function(){$("#URParent").UserResponseInputPlugin(URObj)});
+</script>
+<style>
+input[type='number'] {-moz-appearance:textfield;}
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none; appearance: none; margin: 0;}
+</style>
+<div id="URParent" align="center"><img src="loader.gif" style="margin:100px"></div><br>
+<link rel="stylesheet" href="Custom.css">
+<!-- <script src="http://dcqhpema7gk9a.cloudfront.net/IND/HTML5/ISDDefault.js"></script> -->
+<script src="custom.js"></script>
+
+  
+ <form action="http://www.google.co.in">
+ <input type="button" value="   >>   " id="forwardbutton" />
+ </form>
+ </center>
+  <script>
+  function setValue(a,b)
+  {
+	alert(a);
+	/*alert(b);
+	document.getElementById("forwardbutton").click();*/
+  }
+  </script>
+ </BODY>
+</HTML>
